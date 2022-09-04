@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddMatchController">
+   <children>
+      <Button fx:id="addMatchButton" layoutX="255.0" layoutY="534.0" mnemonicParsing="false" onAction="#createNewMatch" prefHeight="121.0" prefWidth="197.0" text="Add Match">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="691.0" layoutY="576.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="80.0" prefWidth="160.0" text="Back" />
+      <ScrollPane fitToWidth="true" layoutX="55.0" layoutY="88.0" prefHeight="411.0" prefWidth="200.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1662.0" prefWidth="185.0">
+               <children>
+                  <ImageView fx:id="showPick0" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-bank.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick1" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-border.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick2" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-chalet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick3" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-clubhouse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick4" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-coastline.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick5" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-consulate.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick6" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-emeraldplains.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick7" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="780.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-favela.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick8" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="890.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-kafe.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick9" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1000.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-kanal.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick10" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-oregon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick11" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1220.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-outback.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick12" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-skyscraper.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick13" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1440.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-themepark.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showPick14" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1550.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-villa.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </ScrollPane>
+      <Text layoutX="55.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Map Pick:" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="450.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Map Bans:" underline="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="highlight" layoutX="281.0" layoutY="434.0" mnemonicParsing="false" text="Highlight?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="tachanka" layoutX="281.0" layoutY="473.0" mnemonicParsing="false" text="Tachanka?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <ChoiceBox fx:id="matchResult" layoutX="278.0" layoutY="116.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="attackWin" layoutX="278.0" layoutY="215.0" prefWidth="150.0" />
+      <Text layoutX="281.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Match Result:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="278.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack Win:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="278.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack Loss:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="attackLoss" layoutX="278.0" layoutY="276.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="defenseWin" layoutX="278.0" layoutY="334.0" prefWidth="150.0" />
+      <Text layoutX="278.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense Win:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="278.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense Loss:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="defenseLoss" layoutX="278.0" layoutY="395.0" prefWidth="150.0" />
+      <ScrollPane fitToWidth="true" layoutX="450.0" layoutY="88.0" prefHeight="411.0" prefWidth="200.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1662.0" prefWidth="185.0">
+               <children>
+                  <ImageView fx:id="showFirstBan0" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-bank.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan1" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-border.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan2" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-chalet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan3" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-clubhouse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan4" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-coastline.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan5" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-consulate.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan6" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-emeraldplains.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan7" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="780.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-favela.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan8" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="890.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-kafe.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan9" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1000.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-kanal.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan10" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-oregon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan11" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1220.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-outback.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan12" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-skyscraper.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan13" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1440.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-themepark.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showFirstBan14" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1550.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-villa.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fitToWidth="true" layoutX="671.0" layoutY="88.0" prefHeight="411.0" prefWidth="200.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1662.0" prefWidth="185.0">
+               <children>
+                  <ImageView fx:id="showSecondBan0" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-bank.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan1" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-border.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan2" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-chalet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan3" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-clubhouse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan4" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-coastline.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan5" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-consulate.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan6" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-emeraldplains.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan7" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="780.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-favela.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan8" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="890.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-kafe.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan9" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1000.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-kanal.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan10" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-oregon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan11" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1220.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-outback.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan12" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-skyscraper.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan13" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1440.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-themepark.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="showSecondBan14" fitHeight="101.0" fitWidth="160.0" layoutX="12.0" layoutY="1550.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r6-maps-villa.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Text fx:id="pick" layoutX="269.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="-170.0" translateY="-5.0" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="ban1" layoutX="279.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="220.0" translateY="-15.0" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="ban2" layoutX="289.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="430.0" translateY="-22.0" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="validate" layoutX="324.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.topAnchor="658.41796875">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

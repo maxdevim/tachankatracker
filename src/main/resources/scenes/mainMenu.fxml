@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <Text layoutX="257.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TACHANKA TRACKER" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Text>
+      <Line endX="292.3007142333984" layoutX="465.0" layoutY="77.0" startX="-300.0" />
+      <Text layoutX="718.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="v1.2" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="50.0" layoutY="200.0" mnemonicParsing="false" onAction="#SwitchToMatchHistory" prefHeight="100.0" prefWidth="200.0" text="Match History">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="50.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchToMapOverview" prefHeight="100.0" prefWidth="200.0" text="Map Overview">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="50.0" layoutY="500.0" mnemonicParsing="false" onAction="#switchToAddMatch" prefHeight="130.0" prefWidth="285.0" text="Add Match">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+      <Line endX="-113.85711669921875" endY="567.857177734375" layoutX="475.0" layoutY="87.0" startX="-113.85711669921875" startY="35.28572082519531" />
+      <Text layoutX="511.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best Map:">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="bestMapName" layoutX="763.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oregon" AnchorPane.rightAnchor="33.6552734375">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="bestMapImage" fitHeight="231.0" fitWidth="356.0" layoutX="511.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/r6-maps-bank.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text layoutX="392.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Winrate">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ProgressIndicator fx:id="bestMapWinrate" layoutX="416.0" layoutY="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="39.0" progress="0.83" scaleX="3.0" scaleY="3.0" />
+      <ProgressIndicator fx:id="bestMapDefenseWinrate" layoutX="531.0" layoutY="495.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="39.0" progress="0.37" scaleX="2.0" scaleY="2.0" />
+      <ProgressIndicator fx:id="bestMapAttackWinrate" layoutX="808.0" layoutY="496.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="39.0" progress="0.45" scaleX="2.0" scaleY="2.0" />
+      <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="590.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/r6-icon-defense.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="highlights" layoutX="655.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highlights : 000" AnchorPane.rightAnchor="24.31640625">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="tachankas" layoutX="707.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tachanka spotted: 000" AnchorPane.rightAnchor="25.177734375">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="515.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="800.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="91.0" fitWidth="95.0" layoutX="701.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/r6-icon-attack.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
